@@ -42,9 +42,9 @@ int main() {
 		kolekcijaATest.Ucitaj("KolekcijaA.txt");
 		cout << kolekcijaATest << endl; // kolekcijaATest.Ispisi(cout);
 	}
-	catch (...)
+	catch (const char* izuzetak)
 	{
-		cout << "Izuzetak!"<<endl;
+		cout << "Izuzetak: "<<izuzetak<<endl;
 	}
 	try
 	{
